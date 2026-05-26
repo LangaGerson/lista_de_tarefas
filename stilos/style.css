@@ -1,0 +1,120 @@
+@charset "Utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+.app{
+    max-width: 540px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 100px auto 20px;
+    padding: 20px 30px;
+    border-radius: 15px;
+
+}
+#title{
+    display: flex;
+}
+#title img{
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+.app h1{
+    color: #002765; 
+}
+
+#linha{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left:20px ;
+    margin-bottom: 25px;
+    background: #d2d3d4;
+
+}
+#entrada{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 350px;
+}
+#butao{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 0px 15px;
+    color: #fff;
+    font-weight: 600;
+    background: #ff5945;
+    cursor: pointer;
+}
+#tela{
+    color: #727376;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 40px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url(../imagens/oval.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 1px;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image:url(../imagens/check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#dee0ec;
+
+}
+@media (max-width: 480px)  {
+    .app{
+        margin: 20px auto;
+        padding: 15px;
+    }
+    #entrada{
+        min-width: 110px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    ul li{
+        font-size: 14px;
+    }
+}
