@@ -103,17 +103,30 @@ ul li span:hover{
     background:#dee0ec;
 
 }
-@media (max-width: 480px)  {
+footer{
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 2px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+@media (max-width: 468px)  {
     .app{
-        height: 100vh;
-        margin: -10px auto;
+        height: 90vh;
+        margin: 20px auto 0px;
         padding: 15px;
     }
     #entrada{
-        min-width: 110px;
+        width: 110px;
     }
-    h1{
+    .app h1{
         font-size: 20px;
+    
     }
     ul li{
         font-size: 14px;
