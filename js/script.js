@@ -2,6 +2,7 @@ const entrada = document.getElementById('entrada');
 const lista = document.getElementById('lista');
 const tela = document.getElementById('tela')
 function adicionar(){
+    contar()
     if(entrada.value  === ''){
         alert("Por favor, escreva algo!")
     }else{
@@ -13,8 +14,9 @@ function adicionar(){
         li.appendChild(span)
         contar()
         }
-    entrada.value="";
-    saveData();
+
+        entrada.value="";
+        saveData();
 
 }
 

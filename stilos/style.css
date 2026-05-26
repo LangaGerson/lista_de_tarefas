@@ -105,7 +105,8 @@ ul li span:hover{
 }
 @media (max-width: 480px)  {
     .app{
-        margin: 20px auto;
+        height: 100vh;
+        margin: -10px auto;
         padding: 15px;
     }
     #entrada{
